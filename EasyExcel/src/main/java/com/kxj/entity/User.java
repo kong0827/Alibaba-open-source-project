@@ -1,5 +1,7 @@
 package com.kxj.entity;
 
+import java.util.Date;
+
 /**
  * @ClassName User
  * @Description TODO
@@ -10,13 +12,13 @@ package com.kxj.entity;
 public class User {
     private String id;
     private String username;
-    private String birthday;
+    private Date birthday;
     private String gender;
 
     public User() {
     }
 
-    public User(String id, String username, String birthday, String gender) {
+    public User(String id, String username, Date birthday, String gender) {
         this.id = id;
         this.username = username;
         this.birthday = birthday;
@@ -39,11 +41,11 @@ public class User {
         this.username = username;
     }
 
-    public String getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
